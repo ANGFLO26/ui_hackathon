@@ -8,11 +8,13 @@ import { StarterPage } from './pages/StarterPage';
 import { ComingSoonPage } from './pages/ComingSoonPage';
 import { DuelPage } from './pages/duel/DuelPage';
 import { InventoryPage } from './pages/inventory/InventoryPage';
+import { LandscapePrompt } from './components/shared/LandscapePrompt';
 
 function App() {
   return (
     <ToastProvider>
       <UserProvider>
+        <LandscapePrompt />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/chat" element={<ChatPage />} />

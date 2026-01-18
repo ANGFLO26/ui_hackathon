@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Footer: React.FC = () => {
     return (
-        <footer className="bg-matrix-black px-6 h-8 border-t border-white/10 flex items-center justify-between text-[10px] font-bold tracking-widest text-white/20">
+        <footer className="hidden md:flex bg-matrix-black px-6 h-8 border-t border-white/10 items-center justify-between text-[10px] font-bold tracking-widest text-white/20">
             <div className="flex items-center gap-6">
                 <div className="flex items-center gap-8 uppercase font-mono tracking-widest text-white/40 text-[9px]">
                     <span>COORD_X: 144.22</span>

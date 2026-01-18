@@ -11,7 +11,7 @@ export const HomePage: React.FC = () => {
         <MainLayout>
             <Header />
             {/* Central Workspace */}
-            <main className="flex-1 grid grid-cols-12 gap-8 items-center mt-4">
+            <main className="flex-1 grid grid-cols-12 gap-2 md:gap-8 items-center mt-2 md:mt-4 overflow-hidden relative">
                 <Sidebar />
                 <ConstructionPedestal />
                 <RightHUD />
