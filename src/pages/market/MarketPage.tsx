@@ -14,8 +14,15 @@ import { useUser } from '../../context/UserContext';
 
 export const MarketPage: React.FC = () => {
     // Data & Selection State
-    const [listings, setListings] = useState<CyberCard[]>(MOCK_MARKET_DATA.listings);
-    const { userBalance, deductBalance, addToBackpack } = useUser();
+    const { userBalance, deductBalance, backpack, addToBackpack } = useUser();
+
+    // Data & Selection State - Sync with Backpack
+    const [listings, setListings] = useState<CyberCard[]>(() => {
+        return MOCK_MARKET_DATA.listings.map(item => ({
+            ...item,
+            status: backpack.includes(item.id) ? 'SOLD' : item.status
+        }));
+    });
     const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
     const [isProcessing, setIsProcessing] = useState(false);
     const [showSuccessModal, setShowSuccessModal] = useState(false);

@@ -4,7 +4,7 @@ import { UserProvider } from './context/UserContext';
 import { HomePage } from './pages/home/HomePage';
 import { ChatPage } from './pages/chat/ChatPage';
 import { MarketPage } from './pages/market/MarketPage';
-import { StarterPage } from './pages/StarterPage';
+import { StarterPage } from './pages/starter/StarterPage';
 import { ComingSoonPage } from './pages/ComingSoonPage';
 import { DuelPage } from './pages/duel/DuelPage';
 import { InventoryPage } from './pages/inventory/InventoryPage';

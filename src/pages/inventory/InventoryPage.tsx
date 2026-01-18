@@ -11,7 +11,7 @@ import { PageTransition } from '../../components/shared/PageTransition';
 import { useUser } from '../../context/UserContext';
 
 export const InventoryPage: React.FC = () => {
-    // Initial State based on previous hardcoded values
+    // Selection State
     const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
 
     // Deck is an array of size 5, containing card IDs or null
